@@ -1,4 +1,5 @@
 var express = require('express');
+var jsonServer = require('json-server');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -12,6 +13,9 @@ var users = require('./routes/users');
 var meteo = require('./routes/meteo');
 
 var app = express();
+
+//middlewares
+var middlewares = jsonServer.defaults()
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -28,6 +32,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/meteo',meteo);
+
+app.use(middlewares);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

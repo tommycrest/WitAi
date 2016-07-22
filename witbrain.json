@@ -1,0 +1,117 @@
+{
+  "appuntamenti": [
+    {
+      "id": 1
+    },
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "prodotti": [
+    {},
+    {},
+    {},
+    {},
+    {},
+    {}
+  ],
+  "promozioni": [],
+  "modelli": [],
+  "location": [
+    {
+      "id": 1,
+      "city": "milano"
+    },
+    {
+      "id": 2,
+      "city": "torino"
+    },
+    {
+      "id": 3,
+      "city": "genova"
+    },
+    {
+      "id": 4,
+      "city": "pavia"
+    },
+    {
+      "id": 4,
+      "city": "padova"
+    }
+  ],
+  "meteo": [
+    {
+      "id": "milano",
+      "previsione": "sereno con nuvole sparse"
+    },
+    {
+      "id": "torino",
+      "previsione": "sereno con nuvole sparse"
+    },
+    {
+      "id": "genova",
+      "previsione": "nuvoloso con piogge sparse"
+    },
+    {
+      "id": "firenze",
+      "previsione": "temporali"
+    },
+    {
+      "id": "padova",
+      "previsione": "serenissimo"
+    }
+  ],
+  "previsioni": [
+    {
+      "id": "milano",
+      "settimana": {
+        "lunedi": "",
+        "martedi": "",
+        "mercoledi": "",
+        "giovedi": "",
+        "venerdi": "",
+        "sabato": "",
+        "domenica": ""
+      }
+    },
+    {
+      "id": "padova",
+      "settimana": {
+        "lunedi": "",
+        "martedi": "",
+        "mercoledi": "",
+        "giovedi": "",
+        "venerdi": "",
+        "sabato": "",
+        "domenica": ""
+      }
+    },
+    {
+      "id": "torino",
+      "settimana": {
+        "lunedi": "",
+        "martedi": "",
+        "mercoledi": "",
+        "giovedi": "",
+        "venerdi": "",
+        "sabato": "",
+        "domenica": ""
+      }
+    },
+    {
+      "id": "genova",
+      "settimana": {
+        "lunedi": "",
+        "martedi": "",
+        "mercoledi": "",
+        "giovedi": "",
+        "venerdi": "",
+        "sabato": "",
+        "domenica": ""
+      }
+    }
+  ],
+  "drivetryout": []
+}
