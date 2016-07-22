@@ -11,6 +11,8 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var meteo = require('./routes/meteo');
+var location = require('./routes/location');
+var modelli = require('./routes/modelli');
 
 var app = express();
 
@@ -32,6 +34,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/users', users);
 app.use('/meteo',meteo);
+app.use('/modelli',modelli);
+app.use('/location',location);
 
 app.use(middlewares);
 
