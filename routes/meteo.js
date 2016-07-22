@@ -10,10 +10,10 @@ router.get('/', function(req, res, next) {
 	if( location === 'padova') {
 		res.send('{"condizione":"variabile", "temperatura":"32°C"}');
 	}
-	if( location === 'milano') {
+	if( location === 'genova') {
 		res.send('{"condizione":"nuvoloso", "temperatura":"22°C"}');
 	}
-	if( location === 'milano') {
+	if( location === 'roma') {
 		res.send('{"condizione":"pioggie sparse", "temperatura":"18°C"}');
 	}
 	
