@@ -3,7 +3,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Meteo info json' });
+  if( req.body.location == "milano") {
+	  res.render('{"soleggiato"}');
+  }
 });
 
 module.exports = router;
