@@ -1,28 +1,29 @@
 var express = require('express');
-var jsonServer = require('json-server');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+
+//dichiarazione d'uso di http
 var http = require('http');
 
+//dichiarazione di variabile wit.ai
+var wit = require('node-wit');
+
+//routes dichiarati
 var routes = require('./routes/index');
 var users = require('./routes/users');
-
 var meteo = require('./routes/meteo');
 var location = require('./routes/location');
 var modelli = require('./routes/modelli');
 
+//init dell'appalication express
 var app = express();
-
-//middlewares
-var middlewares = jsonServer.defaults()
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
@@ -31,13 +32,12 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+//dichiarazione di uso dei routes
 app.use('/', routes);
 app.use('/users', users);
 app.use('/meteo',meteo);
 app.use('/modelli',modelli);
 app.use('/location',location);
-
-app.use(middlewares);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -46,7 +46,7 @@ app.use(function(req, res, next) {
   next(err);
 });
 
-// error handlers
+// error handlers testing 
 
 // development error handler
 // will print stacktrace
