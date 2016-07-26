@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(request, response, next ){
 	
-	var data = request.query;
+	var data = request.body;
 	console.log(data);
 	
 	var logic = perceptronSkynet(data);
@@ -27,9 +27,9 @@ function perceptronSkynet( data ) {
 	if( s.operation == 'talking' ) {
 		intent = s.intent;
 		return "Possiamo parlare sono attivo!"
+	} else {
+		return "Devi dirmi qualcosa?"
 	}
-	
-	
 	
 }
 
