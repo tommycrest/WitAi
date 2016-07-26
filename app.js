@@ -15,7 +15,7 @@ var users = require('./routes/users');
 var meteo = require('./routes/meteo');
 var location = require('./routes/location');
 var modelli = require('./routes/modelli');
-var brain = require('./routes/brain');
+var skynet = require('./routes/skynet');
 
 //init dell'appalication express
 var app = express();
@@ -38,7 +38,7 @@ app.use('/meteo',meteo);
 app.use('/modelli',modelli);
 app.use('/location',location);
 
-app.use('/brain', brain)
+app.use('/skynet', skynet)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
