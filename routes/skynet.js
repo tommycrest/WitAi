@@ -22,7 +22,8 @@ router.post('/', function(request, response, next ){
 function perceptronSkynet( data ) {
 	
 	var s = JSON.parse(JSON.stringify(data));
-	
+	console.log("Sono nel perceptron skynet ");
+	consoleo.log(s);
 	var intent = '';
 	if( s.operation == 'talking' ) {
 		intent = s.intent;
