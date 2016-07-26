@@ -8,8 +8,6 @@ var bodyParser = require('body-parser');
 //dichiarazione d'uso di http
 var http = require('http');
 
-//dichiarazione di variabile wit.ai
-var wit = require('node-wit');
 
 //routes dichiarati
 var routes = require('./routes/index');
