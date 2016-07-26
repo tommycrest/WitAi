@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 router.post('/', function(request, response, next ){
 	
 	var data = request.body;
-	console.log(data);
+	console.log(data.toString());
 	
 	var logic = perceptronSkynet(data);
 	
